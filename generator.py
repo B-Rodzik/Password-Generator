@@ -20,7 +20,9 @@ def generator_ran_pswd():
 
 
 def clipper():
-    pass
+    root.clipboard_clear()
+    root.clipboard_append(pw_entry.get())
+
 
 lf = LabelFrame(root, text="Długość hasła: ")
 lf.pack(pady=20)
